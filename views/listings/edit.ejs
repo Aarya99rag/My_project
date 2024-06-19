@@ -1,0 +1,47 @@
+<%- layout('/layouts/boilerplate.ejs') %>
+<body>
+    <br>
+    <div class="row">
+        <div class="col-8 offset-2">
+            <h3 style="color: white;">Edit Listing Details :</h3><br>
+            <form method="POST" action="/listings/<%= listing._id %>?_method=PUT">
+                <div class="mb-3">
+                    <label for="title" class="form-label">Title</label>
+                    <input value="<%= listing.title %>" type="text" class="form-control" name="listing[title]">
+                </div>
+                <div class="mb-3">
+                    <label for="description" class="form-label">Description</label>
+                    <textarea value="<%= listing.description %>" class="form-control" name="listing[description]"><%= listing.description %></textarea>
+                </div>
+                <div class="mb-3">
+                    <label class="form-label" for="image">Enter Image</label>
+                    <input type="text" name="listing[image]" class="form-control" value="<%= listing.image %>">
+                </div>
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="mb-3">
+                            <label class="form-label" for="place">Enter location</label>
+                            <input type="text" name="listing[location]" value="<%= listing.location %>" class="form-control">
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="mb-3">
+                            <label class="form-label" for="country">Enter country</label>
+                            <input type="text" name="listing[country]" class="form-control" value="<%= listing.country %>">
+                        </div>
+                    </div>
+                </div>
+                <div class="mb-3">
+                    <label class="form-label" for="price">Enter Price</label>
+                    <input type="number" name="listing[price]" value="<%= listing.price %>" class="form-control">
+                </div>
+                <div class="text-center">
+                    <button class="btn btn-dark mt-3">Edit</button><br><br>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+
+
+

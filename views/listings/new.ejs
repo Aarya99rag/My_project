@@ -1,0 +1,46 @@
+<%- layout('/layouts/boilerplate.ejs') %>
+<body>
+    <br>
+    <div class="row">
+        <div class="col-8 offset-2">
+            <h3 style="color: white;">Enter Listing Details :</h3><br>
+            <form action="/listings" method="post">
+                <div class="mb-3">
+                    <label for="title" class="form-label">Title</label>
+                    <input type="text" class="form-control" name="listing[title]" placeholder="Enter title">
+                </div>
+                <div class="mb-3">
+                    <label for="description" class="form-label">Description</label>
+                    <textarea placeholder="Add description here" class="form-control" name="listing[description]"></textarea>
+                </div>
+                <div class="mb-3">
+                    <label class="form-label" for="image">Enter Image</label>
+                    <input type="text" name="listing[image]" class="form-control" placeholder="Enter img/URL">
+                </div>
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="mb-3">
+                            <label class="form-label" for="place">Enter location</label>
+                            <input type="text" name="listing[location]" placeholder="Enter place" class="form-control">
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="mb-3">
+                            <label class="form-label" for="country">Enter country</label>
+                            <input type="text" name="listing[country]" class="form-control" placeholder="Enter place">
+                        </div>
+                    </div>
+                </div>
+                <div class="mb-3">
+                    <label class="form-label" for="price">Enter Price</label>
+                    <input type="number" name="listing[price]" placeholder="Enter price" class="form-control">
+                </div>
+                <div class="text-center">
+                    <button class="btn btn-dark mt-3">Add</button><br><br>
+                </div>
+            </form>
+        </div>
+    </div>        
+</body>
+
+

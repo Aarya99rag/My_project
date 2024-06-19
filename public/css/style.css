@@ -1,0 +1,210 @@
+.body{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: rgb(53, 52, 52); 
+}
+
+.container-fluid{
+    flex: 1;
+    background-color: rgb(53, 52, 52); 
+}
+
+/* navbar */
+
+.navbar{
+    height: 5rem;
+    background-color: #424769 !important;
+}
+
+.fa-compass{
+    color: #E19898;
+    font-size: 3rem;
+}
+
+.nav-link{
+    /* color: black !important; */
+    font-size: 1.5rem;
+    margin-right: 20px;
+    color: white !important;
+    margin-top: 5px;
+    font-weight: 600;
+}
+
+.nav-link:hover{
+    color: #E19898 !important;
+    font-size: 1rem;
+    font-weight: 500;
+    margin-top: 10px;
+}
+
+.logo{
+    color: #E19898;
+    font-size: 1.5rem;
+    padding-left: 800px;
+    padding-top: 10px;
+    font-weight: 700;
+} 
+
+/* footer */
+
+.footer{
+    border-top: 3px solid white;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 4px;
+    background-color: #424769;
+}
+
+.footer-social{
+    font-size: 2rem;
+    max-width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    gap: 1.5rem;
+    color: rgba(240, 248, 255, 0.933);
+}
+
+.footer-social i:hover{
+    font-size: 2.5rem;
+}
+
+.company{
+    display: inline-block;
+    padding: 1rem;
+    line-height: 1rem;
+    color: white;
+}
+
+.info a{
+    padding: 5px;
+    text-decoration: none;
+    color: white;
+}
+
+.info a:hover{
+    padding: 5px;
+    text-decoration: underline;
+}
+
+/* index page(home page) */
+
+.heading{
+    margin-left: 55px;
+    margin-bottom: 30px;
+    background-color:#363062;
+    color: white;
+    height: 650px;
+    width: 90%;
+    text-align: center;
+    padding-top: 50px;
+    border: 2px solid white;
+    border-radius: 15px;
+}
+
+.cards{
+    margin: 20px !important;
+    border-bottom: 4px solid rgb(5, 166, 224);
+    border-right: 4px solid rgb(5, 166, 224);
+    border-top: none;
+    border-left: none;
+    padding: 10px;
+    border-radius: 20px;
+}
+
+.cards:hover{
+    border: none;
+}
+
+.spot{
+    text-decoration: none;
+    color: white;
+}
+
+/* .spot{
+    position: relative;
+    animation-name: example;
+    animation-duration: 5s;
+    animation-delay: 0s;
+}
+
+@keyframes example {
+    0%   {left:-850px;}
+    100% {left:20px;}
+} */
+
+.spot:hover{
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+    background-color: rgb(255, 255, 255);
+    color: black;
+    border-radius: 20px;
+}
+
+.reveal{
+    position: relative;
+    transform: translateY(150px);
+    opacity: 0;
+    transition: all 2s ease;
+}
+
+.reveal.active{
+    transform: translateY(0px);
+    opacity: 1;
+}
+
+/* show page */
+
+.img-slider{
+    display: flex;
+}
+
+.card-img-top{
+    border-radius: 1.5rem;
+    /* padding-top: 10px; */
+}
+
+.card-title{
+    color: rgb(8, 185, 249);
+}
+
+.show-img{
+    height: 400px;
+    box-shadow: 4px 4px 16px white;
+    margin-bottom: 30px;
+}
+
+.card{
+    border: none;
+    padding-top: 40px;
+    background-color: rgb(53, 52, 52);
+    color: white;
+}
+
+.list-group-item{
+    background-color: rgb(53, 52, 52) ;
+    color: white;
+}
+
+.mb-4{
+    color: white;
+    border-color: rgb(53, 52, 52);
+}
+
+/* edit form */
+
+.form-label{
+    color: white;
+}
+
+.form-control{
+    border: 4px solid rgb(5, 166, 224);
+}
+
+.btn{
+    width: 100px;
+    border: 3px solid rgb(5, 166, 224);
+}

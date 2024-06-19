@@ -1,0 +1,25 @@
+<%- layout('/layouts/boilerplate.ejs') %>
+
+    <body>
+        <!-- <form action="/listings/new" method="GET">
+        <button>Create new Listing</button>
+    </form> -->
+    <br>
+        <div class="row row-cols-lg-3 row-cols-md-2 row-cols-sm-1">
+            <% for( let listing of allListings ) { %>
+                <a class="spot reveal" href="/listings/<%= listing._id %>">
+                    <div class="cards">
+                        <img src="<%= listing.image %>" class="card-img-top" alt="Listing Image" style="height: 20rem;">
+                        <div class="card-body">
+                            <b><%= listing.title %></b>
+                            <p>&#8377; <%= listing.price.toLocaleString("en-IN") %></p>
+                        </div>
+                    </div>
+                </a>
+            <% } %>
+        </div>
+        <!-- the anchor tags href /listings/:id route will open the specific listing and show its detailed description (It will send request to show route)-->
+    </body>
+
+
+
